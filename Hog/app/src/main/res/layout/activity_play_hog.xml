@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="0dp"
+    tools:context="com.alexhornick.hog.PlayHog"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Player 1"
+            android:id="@+id/player1Text"
+            android:textAlignment="center"
+            android:clickable="false"
+            android:layout_weight="0.54"
+            android:background="#84e184"
+            android:textColor="#FFF"
+            android:paddingTop="20dp" />
+
+        <TextView
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Player 2"
+            android:id="@+id/player2Text"
+            android:textAlignment="center"
+            android:background="#888"
+            android:textColor="#FFF"
+            android:layout_weight="0.61"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select Dice to Roll"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:paddingRight="40dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/die1"
+            android:src="@drawable/die1"
+            android:adjustViewBounds="false"
+            android:alpha="0.4"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/die2"
+            android:src="@drawable/die2"
+            android:alpha="0.4"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/die3"
+            android:src="@drawable/die3"
+            android:alpha="0.4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/die4"
+            android:src="@drawable/die4"
+            android:alpha="0.4"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/die5"
+            android:src="@drawable/die5"
+            android:alpha="0.4"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/die6"
+            android:src="@drawable/die6"
+            android:alpha="0.4"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="ROLL"
+        android:id="@+id/roll"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:background="#84e184"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="213dp"
+        android:layout_height="67dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Player 1 Total"
+            android:id="@+id/player1TotalText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:ems="10"
+            android:editable="false"
+            android:id="@+id/player1Total"
+            android:text="0"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Player 2 Total"
+            android:id="@+id/player2TotalText" />
+
+        <EditText
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:editable="false"
+            android:ems="10"
+            android:id="@+id/player2Total"
+            android:textAlignment="center"
+            android:text="0" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="New Game"
+        android:id="@+id/newGame"
+        android:layout_gravity="right"
+        android:background="#84e184"
+        android:textColor="#FFF"
+        android:padding="10dp" />
+
+</LinearLayout>
