@@ -1,0 +1,35 @@
+html {
+	width:100%;
+	background-color:#EFEFEF;
+}
+
+body {
+	width: 80%;
+	margin:auto;
+	color:	#dc775d;
+	font-family: "Verdana", "sans-serif";
+	text-align:center;
+}
+
+h1 {
+	text-shadow: 1px 1px 1px #cb664c;
+	font-size:85%;
+}
+
+
+p {
+	color: #BB9795;
+	font-size:75%;
+}
+
+#question, #answer { 
+	font-weight:bold;
+}
+
+#paragraphJoke {
+	text-align:left;
+	margin:auto;
+}
+
+
+
